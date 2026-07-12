@@ -19,7 +19,7 @@
 
 .location-card{
     background:#ffffff;
-    border:1px solid #E8EDF3;
+    border:1px solid #8b4b37;
     padding:45px 30px;
     text-align:center;
     transition:.35s;
@@ -52,7 +52,8 @@
 
     border-radius:50%;
 
-    background:#FFF8E7;
+    background:#95a99d;
+ 
 
     display:flex;
     align-items:center;
@@ -69,11 +70,11 @@
 
 .location-card:hover .card-icon{
 
-    background:#163B6D;
+    background:#95a99d;
 
     color:#fff;
 
-    border-color:#163B6D;
+    border-color:#8b4b37;
 
 }
 
