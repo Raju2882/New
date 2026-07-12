@@ -22,7 +22,7 @@ export default function Hero() {
                 <div className="hero-content">
 
                     <span className="hero-badge">
-                        Wellcome to Ashraya Aarika
+                        Welcome to Ashraya Aarika
                     </span>
 
                     <h1 className="hero-title">
