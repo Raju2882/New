@@ -38,17 +38,7 @@ export default function Navbar() {
 
           <div className="navbar-center">
 
-            <h2>
-              PREMIUM RESIDENTIAL PROJECT
-            </h2>
-
-            <p>
-              Modern Living • Premium Lifestyle
-            </p>
-
-            <span>
-              REG. NO.: XXXXX/2026
-            </span>
+           
 
           </div>
 
@@ -68,7 +58,7 @@ export default function Navbar() {
 
                 <small>Call Us</small>
 
-                <h4>+91 88847 35735</h4>
+                <h4>+91 75410 14101</h4>
 
               </div>
 

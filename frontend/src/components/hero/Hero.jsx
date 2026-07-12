@@ -22,17 +22,17 @@ export default function Hero() {
                 <div className="hero-content">
 
                     <span className="hero-badge">
-                        Premium Residential Layout
+                        Wellcome to Ashraya Aarika
                     </span>
 
                     <h1 className="hero-title">
-                        Live the <br />
-                        Future <span>Today</span>
+                        Premium Plots <br />
+                        <span> Near Doddaballapur </span>
                     </h1>
 
                     <p className="hero-description">
-                        Experience a premium lifestyle surrounded by nature,
-                        world-class amenities, and excellent connectivity.
+                        Starting at ₹3,499/sq.ft
+                        BMRDA Approved | Gated Community | High Growth Location Invest Today in North Bangalore’s Fastest Growing Corridor
                     </p>
 
                     <div className="hero-buttons">
@@ -57,7 +57,7 @@ export default function Hero() {
             </a>
             {/* Floating Right Side */}
 
-           
+
 
 
 
