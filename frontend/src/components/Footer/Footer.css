@@ -161,3 +161,124 @@
 }
 
 }
+/* ==========================================
+   Mobile Sticky Bottom Bar
+========================================== */
+
+.footer-action-bar{
+
+    display:none;
+
+}
+
+/* Mobile Only */
+
+@media (max-width:768px){
+
+.footer-action-bar{
+
+    display:flex;
+
+    position:fixed;
+
+    left:0;
+
+    bottom:0;
+
+    width:100%;
+
+    padding:8px 10px;
+
+    background:#ffffff;
+
+    box-shadow:0 -5px 20px rgba(0,0,0,.12);
+
+    gap:10px;
+
+    z-index:9999;
+
+}
+
+/* Buttons */
+
+.action-btn{
+
+    flex:1;
+
+    height:50px;
+
+    border-radius:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+/* Call */
+
+.call-btn{
+
+    background:#ffffff;
+
+    color:#5E2D91;
+
+    border:2px solid #5E2D91;
+
+}
+
+/* WhatsApp */
+
+.whatsapp-btn{
+
+    background:#25D366;
+
+    color:#ffffff;
+
+}
+
+/* Enquire */
+
+.enquire-btn{
+
+    background:#D8B14A;
+
+    color:#111111;
+
+}
+
+/* Icons */
+
+.action-btn i{
+
+    font-size:18px;
+
+}
+
+}
+
+/* Desktop */
+
+@media (min-width:769px){
+
+.footer-action-bar{
+
+    display:none !important;
+
+}
+
+}

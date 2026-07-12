@@ -56,7 +56,29 @@ export default function Footer() {
         </p>
 
       </div>
+      <div className="footer-action-bar">
 
+        <a href="tel:+919876543210" className="action-btn call-btn">
+          <i className="fa-solid fa-phone"></i>
+          <span>Call</span>
+        </a>
+
+        <a
+          href="https://wa.me/919876543210"
+          target="_blank"
+          rel="noreferrer"
+          className="action-btn whatsapp-btn"
+        >
+          <i className="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+
+        <button className="action-btn enquire-btn">
+          <i className="fa-regular fa-pen-to-square"></i>
+          <span>Enquire</span>
+        </button>
+
+      </div>
     </footer>
 
   );
