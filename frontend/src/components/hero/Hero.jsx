@@ -27,18 +27,18 @@ export default function Hero() {
 
                     <h1 className="hero-title">
                         Premium Plots <br />
-                        <span> Near Doddaballapur </span>
+                        <span> In Doddaballapur </span>
                     </h1>
 
                     <p className="hero-description">
-                        Starting at ₹3,499/sq.ft
+        
                         BMRDA Approved | Gated Community | High Growth Location Invest Today in North Bangalore’s Fastest Growing Corridor
                     </p>
 
                     <div className="hero-buttons">
 
                         <a href="#contact" className="btn-primary">
-                            Call Now
+                            Book site visit
                         </a>
 
                         <a href="#about" className="btn-secondary">
