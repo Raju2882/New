@@ -25,9 +25,8 @@ const cards = [
   },
   {
     icon: <FaRoad />,
-    title: "40ft Entrance Road",
-    desc: "Wide roads for easy accessibility."
-  },
+    title: "Individual A Khata",
+    desc: "Individual A Khata Every plot comes with an Individual A Khata"  },
   {
     icon: <FaFileContract />,
     title: "Clear Titles",
@@ -55,7 +54,6 @@ const cards = [
 
             <h2>
               Project 
-              <br />
               Highlights
             </h2>
 

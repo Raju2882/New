@@ -13,13 +13,7 @@ export default function PrimeLocation() {
           <div className="heading-line"></div>
 
           <p>
-            Situated in North Bangalore, our premium residential layout is
-            strategically positioned in close proximity to the airport,
-            upcoming 10,000 acres of ITIR/SEZ projects, and KIADB industrial
-            areas, ensuring a thriving economic environment. This location not
-            only provides convenient access to workplaces but also promises a
-            significant appreciation in property value, making it a lucrative
-            investment for the future.
+            Strategically located in the fast-growing Doddaballapur corridor of North Bengaluru, Ashraya Aarika offers seamless connectivity to Foxconn's Apple manufacturing ecosystem, the ₹40,000 Crore KWIN City Project, STRR, Kempegowda International Airport, and the Doddaballapur Industrial Area. With its highway-attached location and excellent infrastructure, it presents a strong opportunity for both homebuyers and long-term investors.
           </p>
 
         </div>

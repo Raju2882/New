@@ -32,8 +32,8 @@ const locations = [
   },
   {
     icon: <FaCity />,
-    title: "KHIR City Project",
-    subtitle: "Upcoming development",
+    title: "KWIN City Project",
+    subtitle: "₹40,000 Crore",
   },
   {
     icon: <FaHeartbeat />,

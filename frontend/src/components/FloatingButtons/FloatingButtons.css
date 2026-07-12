@@ -45,7 +45,7 @@
 
     border:none;
 
-    background:#b89627;
+    background:orange;
 
     color:#fff;
 
@@ -111,7 +111,7 @@
 
 .floating-contact{
 
-    right:10px;
+   display: none;
 
 }
 
