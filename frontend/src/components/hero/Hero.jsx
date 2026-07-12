@@ -42,7 +42,7 @@ export default function Hero() {
                         </a>
 
                         <a href="#about" className="btn-secondary">
-                            Explore Project
+                            Download Brocure
                         </a>
 
                     </div>

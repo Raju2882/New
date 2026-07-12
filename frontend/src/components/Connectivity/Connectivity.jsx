@@ -1,38 +1,39 @@
 import "./Connectivity.css";
 import cityImage from "../../assets/images/city.jpg";
 
-import {
+ import {
+  FaCheckCircle,
+  FaShieldAlt,
   FaRoad,
-  FaCarSide,
-  FaSchool,
-  FaShoppingBag,
+  FaFileContract,
   FaArrowUp
 } from "react-icons/fa";
 
 export default function Connectivity() {
 
-  const cards = [
-    {
-      icon: <FaRoad />,
-      title: "Strategic Access",
-      desc: "Close to 4-Lane State Highway (SH-09), ensuring rapid transit."
-    },
-    {
-      icon: <FaCarSide />,
-      title: "Seamless Travel",
-      desc: "Well-developed roads providing smooth connectivity to the city center."
-    },
-    {
-      icon: <FaSchool />,
-      title: "Education Hubs",
-      desc: "Surrounded by prestigious schools and educational institutions."
-    },
-    {
-      icon: <FaShoppingBag />,
-      title: "Lifestyle Centers",
-      desc: "Short drive to major malls, shopping destinations and entertainment."
-    }
-  ];
+ 
+const cards = [
+  {
+    icon: <FaCheckCircle />,
+    title: "BMRDA Approved",
+    desc: "Fully approved plots with clear documentation."
+  },
+  {
+    icon: <FaShieldAlt />,
+    title: "Gated Community",
+    desc: "Secure environment with modern amenities."
+  },
+  {
+    icon: <FaRoad />,
+    title: "40ft Entrance Road",
+    desc: "Wide roads for easy accessibility."
+  },
+  {
+    icon: <FaFileContract />,
+    title: "Clear Titles",
+    desc: "Transparent documentation process."
+  }
+];
 
   return (
 
@@ -53,9 +54,9 @@ export default function Connectivity() {
             </span>
 
             <h2>
-              Unmatched
+              Project 
               <br />
-              Connectivity
+              Highlights
             </h2>
 
             <div className="connectivity-line"></div>
