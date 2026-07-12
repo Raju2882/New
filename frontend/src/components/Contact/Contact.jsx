@@ -50,9 +50,7 @@ export default function Contact() {
                 <h4>Visit Us</h4>
 
                 <p>
-                  Ashraya Estates<br />
-                  Haliyal, Karnataka<br />
-                  India
+                 12, M P M Empyloyees Layout, Kengunte,<br/> Annapurneshwari NagarM<br/> Bengaluru, Karnataka 560056
                 </p>
 
               </div>
@@ -71,7 +69,7 @@ export default function Contact() {
 
                 <h4>Call Us</h4>
 
-                <p>+91 98765 43210</p>
+                <p>+91 75410 14101</p>
 
               </div>
 
@@ -94,7 +92,7 @@ export default function Contact() {
                   Monday - Saturday
                   <br />
 
-                  9:30 AM – 6:30 PM
+                  10:00 AM – 6:30 PM
 
                 </p>
 

@@ -60,13 +60,7 @@ const cards = [
             <div className="connectivity-line"></div>
 
             <p>
-              Our project offers exceptional connectivity to every
-              important destination in Bengaluru. With excellent
-              road infrastructure, educational institutions,
-              business hubs, shopping centres and healthcare
-              facilities nearby, residents enjoy convenience
-              without compromising lifestyle.
-            </p>
+             Experience a thoughtfully planned community where premium infrastructure, legal transparency, modern amenities, and excellent connectivity come together to create the perfect destination for comfortable living and long-term investment.</p>
 
             <div className="connectivity-grid">
 

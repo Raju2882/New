@@ -22,8 +22,8 @@ const locations = [
   },
   {
     icon: <FaMicrochip />,
-    title: "ITIR / SEZ",
-    subtitle: "Upcoming 10,000 acres project",
+    title: "Foxconn & Tech Parks ",
+    subtitle: "Asia's Largest Apple Manufacturing Ecosyste",
   },
   {
     icon: <FaRocket />,
@@ -32,8 +32,8 @@ const locations = [
   },
   {
     icon: <FaCity />,
-    title: "KWIN City Project",
-    subtitle: "₹40,000 Crore",
+    title: "KWIN City ",
+    subtitle: "₹40,000 Crore Project ",
   },
   {
     icon: <FaHeartbeat />,
