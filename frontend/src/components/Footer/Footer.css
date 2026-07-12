@@ -1,0 +1,163 @@
+/* ==========================================
+   Footer
+========================================== */
+
+.footer{
+
+    background:#beab3e;
+
+    padding:50px 0 25px;
+
+    text-align:center;
+
+}
+
+.footer-logo{
+
+    width:90px;
+
+    margin-bottom:15px;
+
+}
+
+.footer h3{
+
+    margin:0;
+
+    color:#fff;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:34px;
+
+}
+
+.footer p{
+
+    color:rgba(255,255,255,.75);
+
+    margin-top:10px;
+
+    font-size:16px;
+
+}
+
+/* ==========================================
+   Social Icons
+========================================== */
+
+.footer-social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin:30px 0;
+
+}
+
+.footer-social a{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.10);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.footer-social a:hover{
+
+    background:#D8B14A;
+
+    color:#163B6D;
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================================
+   Line
+========================================== */
+
+.footer-line{
+
+    width:100%;
+
+    height:1px;
+
+    background:rgba(255,255,255,.15);
+
+    margin:20px 0;
+
+}
+
+/* ==========================================
+   Copyright
+========================================== */
+
+.copyright{
+
+    margin:0;
+
+    font-size:14px;
+
+    color:rgba(255,255,255,.60);
+
+}
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media(max-width:576px){
+
+.footer{
+
+    padding:40px 0 20px;
+
+}
+
+.footer-logo{
+
+    width:70px;
+
+}
+
+.footer h3{
+
+    font-size:28px;
+
+}
+
+.footer p{
+
+    font-size:14px;
+
+}
+
+.footer-social a{
+
+    width:40px;
+
+    height:40px;
+
+}
+
+}

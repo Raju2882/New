@@ -1,0 +1,741 @@
+/* ==========================================
+   Google Fonts
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================
+   CSS Variables
+========================================== */
+
+:root{
+
+    /* Brand */
+
+    --primary:#163B6D;
+    --primary-dark:#102C52;
+
+    --secondary:#D8B14A;
+    --secondary-light:#E7C86B;
+
+    /* Neutral */
+
+    --white:#ffffff;
+    --black:#101010;
+
+    --background:#F8FAFC;
+
+    --heading:#163B6D;
+
+    --text:#666666;
+
+    --border:#ECECEC;
+
+    /* Radius */
+
+    --radius-sm:6px;
+    --radius-md:10px;
+    --radius-lg:18px;
+
+    /* Shadow */
+
+    --shadow-sm:0 8px 20px rgba(0,0,0,.06);
+
+    --shadow-md:0 12px 30px rgba(0,0,0,.08);
+
+    --shadow-lg:0 18px 40px rgba(22,59,109,.15);
+
+    /* Transition */
+
+    --transition:.35s ease;
+
+}
+
+/* ==========================================
+   Reset
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+button{
+
+    font-family:'Poppins',sans-serif;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+/* ==========================================
+   Container
+========================================== */
+
+.container-custom{
+
+    width:min(1400px,95%);
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   Typography
+========================================== */
+
+h1,
+h2,
+h3,
+h4{
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:var(--heading);
+
+    font-weight:700;
+
+}
+
+.section-title{
+
+    font-size:64px;
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+.section-line{
+
+    width:90px;
+
+    height:4px;
+
+    background:var(--secondary);
+
+    margin:0 auto 30px;
+
+    border-radius:50px;
+
+}
+
+.section-description{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    font-size:19px;
+
+    color:var(--text);
+
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+.btn-primary{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:16px 38px;
+
+    border:none;
+
+    border-radius:var(--radius-sm);
+
+    background:var(--secondary);
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+.btn-secondary{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:16px 38px;
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    border-radius:var(--radius-sm);
+
+}
+
+.btn-secondary:hover{
+
+    background:#fff;
+
+    color:var(--primary);
+
+}
+
+/* ==========================================
+   Cards
+========================================== */
+
+.card{
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-md);
+
+    padding:35px;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/* ==========================================
+   Icons
+========================================== */
+
+.icon-circle{
+
+    width:68px;
+
+    height:68px;
+
+    border-radius:50%;
+
+    background:#FFF7E6;
+
+    border:2px solid var(--secondary);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:var(--primary);
+
+    font-size:28px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   Section Spacing
+========================================== */
+
+.section{
+
+    padding:90px 0;
+
+}
+/* ==========================================
+   Navbar Theme
+========================================== */
+
+.navbar{
+    background:#fff;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+    transition:all .35s ease;
+}
+
+.navbar.sticky{
+    box-shadow:0 10px 30px rgba(22,59,109,.12);
+}
+
+/* ==========================================
+   Hero Theme
+========================================== */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-overlay{
+    background:linear-gradient(
+        rgba(16,44,82,.70),
+        rgba(16,44,82,.60)
+    );
+}
+
+.hero-title{
+    color:#fff;
+}
+
+.hero-title span{
+    color:var(--secondary);
+}
+
+.hero-description{
+    color:#f3f4f6;
+}
+
+/* ==========================================
+   Forms
+========================================== */
+
+input,
+textarea,
+select{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-sm);
+
+    outline:none;
+
+    font-size:15px;
+
+    font-family:'Poppins',sans-serif;
+
+    transition:var(--transition);
+
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    border-color:var(--secondary);
+
+    box-shadow:0 0 0 4px rgba(216,177,74,.15);
+
+}
+
+/* ==========================================
+   Floating Buttons
+========================================== */
+
+.floating-contact{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    z-index:9999;
+
+}
+
+.floating-enquiry{
+
+    width:65px;
+
+    height:180px;
+
+    background:var(--secondary);
+
+    color:var(--primary);
+
+    border:none;
+
+    border-radius:14px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.floating-enquiry span{
+
+    writing-mode:vertical-rl;
+
+    transform:rotate(180deg);
+
+    letter-spacing:2px;
+
+}
+
+.floating-whatsapp{
+
+    width:65px;
+
+    height:65px;
+
+    background:#fff;
+
+    border-radius:14px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#25D366;
+
+    box-shadow:var(--shadow-md);
+
+    font-size:34px;
+
+}
+
+.floating-whatsapp:hover{
+
+    background:#25D366;
+
+    color:#fff;
+
+}
+
+/* ==========================================
+   Image Hover
+========================================== */
+
+.image-hover{
+
+    overflow:hidden;
+
+    border-radius:12px;
+
+}
+
+.image-hover img{
+
+    transition:.45s;
+
+}
+
+.image-hover:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   Section Backgrounds
+========================================== */
+
+.bg-primary{
+
+    background:var(--primary);
+
+}
+
+.bg-light{
+
+    background:#F8FAFC;
+
+}
+
+.bg-white{
+
+    background:#fff;
+
+}
+
+/* ==========================================
+   Utility Classes
+========================================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-white{
+
+    color:#fff;
+
+}
+
+.text-primary{
+
+    color:var(--primary);
+
+}
+
+.text-secondary{
+
+    color:var(--secondary);
+
+}
+
+.mt-1{margin-top:10px;}
+.mt-2{margin-top:20px;}
+.mt-3{margin-top:30px;}
+.mt-4{margin-top:40px;}
+.mt-5{margin-top:50px;}
+
+.mb-1{margin-bottom:10px;}
+.mb-2{margin-bottom:20px;}
+.mb-3{margin-bottom:30px;}
+.mb-4{margin-bottom:40px;}
+.mb-5{margin-bottom:50px;}
+
+/* ==========================================
+   Scrollbar
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f1f1;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/* ==========================================
+   Tablet
+========================================== */
+
+@media(max-width:992px){
+
+.section{
+
+    padding:70px 0;
+
+}
+
+.section-title{
+
+    font-size:46px;
+
+}
+
+.section-description{
+
+    font-size:17px;
+
+}
+
+.card{
+
+    padding:28px;
+
+}
+
+.floating-contact{
+
+    right:15px;
+
+    bottom:20px;
+
+}
+
+.floating-enquiry{
+
+    width:58px;
+
+    height:150px;
+
+}
+
+.floating-whatsapp{
+
+    width:58px;
+
+    height:58px;
+
+    font-size:28px;
+
+}
+
+}
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media(max-width:576px){
+
+.section{
+
+    padding:50px 0;
+
+}
+
+.container-custom{
+
+    width:94%;
+
+}
+
+.section-title{
+
+    font-size:34px;
+
+}
+
+.section-line{
+
+    width:60px;
+
+    margin-bottom:18px;
+
+}
+
+.section-description{
+
+    font-size:15px;
+
+}
+
+.card{
+
+    padding:18px;
+
+}
+
+.icon-circle{
+
+    width:50px;
+
+    height:50px;
+
+    font-size:20px;
+
+}
+
+.btn-primary,
+.btn-secondary{
+
+    padding:13px 22px;
+
+    font-size:14px;
+
+}
+
+.floating-contact{
+
+    right:12px;
+
+    bottom:15px;
+
+}
+
+.floating-enquiry{
+
+    width:50px;
+
+    height:130px;
+
+}
+
+.floating-enquiry span{
+
+    font-size:13px;
+
+}
+
+.floating-whatsapp{
+
+    width:50px;
+
+    height:50px;
+
+    font-size:24px;
+
+}
+
+}

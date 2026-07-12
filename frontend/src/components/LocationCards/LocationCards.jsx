@@ -1,0 +1,75 @@
+import "./LocationCards.css";
+
+import {
+  FaPlaneDeparture,
+  FaIndustry,
+  FaMicrochip,
+  FaRocket,
+  FaCity,
+  FaHeartbeat,
+} from "react-icons/fa";
+
+const locations = [
+  {
+    icon: <FaPlaneDeparture />,
+    title: "Bangalore Airport",
+    subtitle: "20-minute drive away",
+  },
+  {
+    icon: <FaIndustry />,
+    title: "KIADB Industrial Area",
+    subtitle: "Close proximity to major hub",
+  },
+  {
+    icon: <FaMicrochip />,
+    title: "ITIR / SEZ",
+    subtitle: "Upcoming 10,000 acres project",
+  },
+  {
+    icon: <FaRocket />,
+    title: "Aerospace Park",
+    subtitle: "1,000 acres Hardware Park",
+  },
+  {
+    icon: <FaCity />,
+    title: "KHIR City Project",
+    subtitle: "Upcoming development",
+  },
+  {
+    icon: <FaHeartbeat />,
+    title: "Premium Healthcare",
+    subtitle: "Near Manipal & Seven Hills Hospital",
+  },
+];
+
+export default function LocationCards() {
+  return (
+    <section className="location-cards">
+
+      <div className="container-custom">
+
+        <div className="cards-grid">
+
+          {locations.map((item, index) => (
+
+            <div className="location-card" key={index}>
+
+              <div className="card-icon">
+                {item.icon}
+              </div>
+
+              <h3>{item.title}</h3>
+
+              <p>{item.subtitle}</p>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+}

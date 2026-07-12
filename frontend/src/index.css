@@ -1,0 +1,180 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap');
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#ffffff;
+  color:#222;
+  overflow-x:hidden;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+ul{
+  list-style:none;
+}
+
+button{
+  border:none;
+  outline:none;
+  cursor:pointer;
+  font-family:'Poppins',sans-serif;
+}
+
+input,
+textarea,
+select{
+  font-family:'Poppins',sans-serif;
+  outline:none;
+}
+
+#root{
+  width:100%;
+  overflow:hidden;
+}
+
+/* Colors */
+:root{
+
+  --primary:#0F3D3E;
+
+  --secondary:#C9A227;
+
+  --dark:#0A2239;
+
+  --light:#F8F8F8;
+
+  --white:#ffffff;
+
+  --text:#555555;
+
+  --heading:#1B1B1B;
+
+  --shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+/* Common Container */
+
+.container-custom{
+  width:min(1320px,92%);
+  margin:auto;
+}
+
+/* Section */
+
+.section{
+  padding:90px 0;
+}
+
+.section-title{
+  font-family:'Playfair Display',serif;
+  font-size:52px;
+  color:var(--heading);
+  font-weight:700;
+}
+
+.section-subtitle{
+  color:var(--text);
+  margin-top:18px;
+  line-height:1.8;
+  font-size:17px;
+}
+
+.btn-primary-custom{
+
+  background:var(--secondary);
+
+  color:#fff;
+
+  padding:15px 38px;
+
+  border-radius:4px;
+
+  transition:.35s;
+
+  font-weight:600;
+
+}
+
+.btn-primary-custom:hover{
+
+  background:#b58b12;
+
+}
+
+.btn-outline-custom{
+
+  border:2px solid #fff;
+
+  color:#fff;
+
+  padding:15px 38px;
+
+  border-radius:4px;
+
+  transition:.35s;
+
+}
+
+.btn-outline-custom:hover{
+
+  background:#fff;
+
+  color:#000;
+
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+.section{
+
+padding:70px 0;
+
+}
+
+.section-title{
+
+font-size:38px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.section-title{
+
+font-size:30px;
+
+}
+
+.section-subtitle{
+
+font-size:15px;
+
+}
+
+}

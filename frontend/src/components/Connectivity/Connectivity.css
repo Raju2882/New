@@ -1,0 +1,834 @@
+/* ==========================================
+   Connectivity Section
+========================================== */
+
+.connectivity{
+    position:relative;
+    overflow:hidden;
+    padding:70px 0;
+    background:#b08f37;
+}
+
+.connectivity::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at top right,
+        rgba(216,177,74,.12),
+        transparent 35%),
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.03),
+            rgba(255,255,255,0)
+        );
+    pointer-events:none;
+}
+
+.connectivity .container-custom{
+    position:relative;
+    z-index:2;
+}
+
+.connectivity-wrapper{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:45px;
+    align-items:center;
+}
+
+/* ==========================================
+   Left Content
+========================================== */
+
+.connectivity-left{
+    color:#fff;
+}
+
+/* Premium Tag */
+
+.section-tag{
+
+    display:inline-block;
+
+    padding:10px 24px;
+
+    border:1px solid rgba(216,177,74,.45);
+
+    border-radius:40px;
+
+    background:rgba(255,255,255,.05);
+
+    color:#D8B14A;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+
+}
+
+/* Heading */
+
+.connectivity-left h2{
+
+    margin:0;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:60px;
+
+    line-height:1.05;
+
+    color:#fff;
+
+    font-weight:700;
+
+}
+
+/* Gold Line */
+
+.connectivity-line{
+
+    width:80px;
+
+    height:4px;
+
+    margin:18px 0 28px;
+
+    border-radius:50px;
+
+    background:#D8B14A;
+
+}
+
+/* Description */
+
+.connectivity-left > p{
+
+    max-width:560px;
+
+    margin-bottom:35px;
+
+    color:rgba(255,255,255,.85);
+
+    font-size:17px;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================
+   Cards Grid
+========================================== */
+
+.connectivity-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+/* ==========================================
+   Cards
+========================================== */
+
+.connect-card{
+
+    position:relative;
+
+    background:#FFFFFF;
+
+    border-radius:16px;
+
+    padding:24px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:all .35s ease;
+
+    border:1px solid rgba(216,177,74,.15);
+
+    box-shadow:0 12px 35px rgba(0,0,0,.10);
+
+}
+
+.connect-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:5px;
+
+    height:100%;
+
+    background:#D8B14A;
+
+    transition:.35s;
+
+}
+
+/* Hover */
+
+.connect-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#D8B14A;
+
+    box-shadow:0 20px 45px rgba(22,59,109,.18);
+
+}
+
+.connect-card:hover::before{
+
+    width:8px;
+
+}
+
+/* ==========================================
+   Arrow
+========================================== */
+
+.card-arrow{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    width:34px;
+
+    height:34px;
+
+    border-radius:50%;
+
+    background:#FFF8E7;
+
+    color:#163B6D;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:13px;
+
+    transition:.35s;
+
+}
+
+.connect-card:hover .card-arrow{
+
+    background:#163B6D;
+
+    color:#fff;
+
+    transform:rotate(45deg);
+
+}
+
+/* ==========================================
+   Icon
+========================================== */
+
+.connect-icon{
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:50%;
+
+    background:#FFF8E7;
+
+    border:2px solid #D8B14A;
+
+    color:#163B6D;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:26px;
+
+    margin-bottom:18px;
+
+    transition:.35s;
+
+}
+
+.connect-card:hover .connect-icon{
+
+    background:#163B6D;
+
+    border-color:#163B6D;
+
+    color:#FFFFFF;
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   Title
+========================================== */
+
+.connect-card h3{
+
+    margin:0 0 10px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:28px;
+
+    color:#163B6D;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    transition:.35s;
+
+}
+
+.connect-card:hover h3{
+
+    color:#102C52;
+
+}
+
+/* ==========================================
+   Description
+========================================== */
+
+.connect-card p{
+
+    margin:0;
+
+    color:#6B7280;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+/* ==========================================
+   Right Image
+========================================== */
+
+.connectivity-right{
+    position:relative;
+}
+
+.image-wrapper{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    background:#fff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.18);
+
+}
+
+.image-wrapper img{
+
+    width:100%;
+
+    height:700px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.5s ease;
+
+}
+
+.image-wrapper:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================
+   Overlay
+========================================== */
+
+.image-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(22,59,109,.78),
+        rgba(22,59,109,.18),
+        transparent
+    );
+
+}
+
+/* ==========================================
+   Premium Border
+========================================== */
+
+.image-wrapper::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:18px;
+
+    border:1px solid rgba(216,177,74,.45);
+
+    border-radius:12px;
+
+    pointer-events:none;
+
+}
+
+/* ==========================================
+   Quote Box
+========================================== */
+
+.quote-box{
+
+    position:absolute;
+
+    left:22px;
+
+    right:22px;
+
+    bottom:22px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(16px);
+
+    -webkit-backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.22);
+
+    border-radius:14px;
+
+    padding:24px;
+
+    transition:.35s;
+
+}
+
+.quote-box:hover{
+
+    background:rgba(255,255,255,.18);
+
+}
+
+.quote-icon{
+
+    display:block;
+
+    color:#D8B14A;
+
+    font-size:56px;
+
+    line-height:1;
+
+    margin-bottom:8px;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.quote-box p{
+
+    margin:0;
+
+    color:#fff;
+
+    font-size:24px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-style:italic;
+
+    line-height:1.5;
+
+}
+
+/* ==========================================
+   Image Hover
+========================================== */
+
+.image-wrapper{
+
+    transition:.35s;
+
+}
+
+.image-wrapper:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 30px 65px rgba(0,0,0,.28);
+
+}
+/* ==========================================
+   Large Laptop
+========================================== */
+
+@media (max-width:1400px){
+
+.connectivity{
+    padding:60px 0;
+}
+
+.connectivity-wrapper{
+    gap:35px;
+}
+
+.connectivity-left h2{
+    font-size:52px;
+}
+
+.connectivity-left>p{
+    font-size:16px;
+}
+
+.image-wrapper img{
+    height:500px;
+}
+
+.quote-box p{
+    font-size:22px;
+}
+
+}
+
+/* ==========================================
+   Tablet
+========================================== */
+
+@media (max-width:992px){
+
+.connectivity{
+    padding:55px 0;
+}
+
+.connectivity-wrapper{
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+
+}
+
+.connectivity-left{
+
+    text-align:center;
+
+}
+
+.section-tag{
+
+    margin:0 auto 15px;
+
+}
+
+.connectivity-left h2{
+
+    font-size:44px;
+
+}
+
+.connectivity-line{
+
+    margin:15px auto 20px;
+
+}
+
+.connectivity-left>p{
+
+    max-width:100%;
+
+    font-size:16px;
+
+    margin-bottom:30px;
+
+}
+
+.connectivity-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px;
+
+}
+
+.connect-card{
+
+    padding:20px;
+
+}
+
+.connect-icon{
+
+    width:56px;
+
+    height:56px;
+
+    font-size:22px;
+
+}
+
+.connect-card h3{
+
+    font-size:24px;
+
+}
+
+.connect-card p{
+
+    font-size:14px;
+
+}
+
+.image-wrapper img{
+
+    height:420px;
+
+}
+
+.quote-box{
+
+    left:18px;
+
+    right:18px;
+
+    bottom:18px;
+
+    padding:18px;
+
+}
+
+.quote-box p{
+
+    font-size:20px;
+
+}
+
+.quote-icon{
+
+    font-size:46px;
+
+}
+
+}
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width:576px){
+
+.connectivity{
+
+    padding:40px 0;
+
+}
+
+.connectivity-wrapper{
+
+    gap:25px;
+
+}
+
+.connectivity-left{
+
+    padding:0 12px;
+
+    text-align:center;
+
+}
+
+.section-tag{
+
+    font-size:10px;
+
+    padding:7px 14px;
+
+    letter-spacing:1px;
+
+}
+
+.connectivity-left h2{
+
+    font-size:32px;
+
+    line-height:1.15;
+
+}
+
+.connectivity-line{
+
+    width:55px;
+
+    height:3px;
+
+    margin:12px auto 18px;
+
+}
+
+.connectivity-left>p{
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    margin-bottom:22px;
+
+}
+
+/* ===============================
+   2 Cards Per Row
+================================ */
+
+.connectivity-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:10px;
+
+}
+
+.connect-card{
+
+    padding:14px 10px;
+
+    border-radius:10px;
+
+}
+
+.card-arrow{
+
+    width:24px;
+
+    height:24px;
+
+    font-size:9px;
+
+    top:10px;
+
+    right:10px;
+
+}
+
+.connect-icon{
+
+    width:40px;
+
+    height:40px;
+
+    font-size:16px;
+
+    margin-bottom:10px;
+
+}
+
+.connect-card h3{
+
+    font-size:17px;
+
+    line-height:1.2;
+
+    margin-bottom:5px;
+
+}
+
+.connect-card p{
+
+    font-size:11px;
+
+    line-height:1.4;
+
+}
+
+.connectivity-right{
+
+    padding:0 12px;
+
+}
+
+.image-wrapper{
+
+    border-radius:12px;
+
+}
+
+.image-wrapper img{
+
+    height:260px;
+
+}
+
+.image-wrapper::after{
+
+    inset:10px;
+
+}
+
+.quote-box{
+
+    left:10px;
+
+    right:10px;
+
+    bottom:10px;
+
+    padding:10px;
+
+}
+
+.quote-icon{
+
+    font-size:28px;
+
+    margin-bottom:2px;
+
+}
+
+.quote-box p{
+
+    font-size:14px;
+
+    line-height:1.4;
+
+    text-align:center;
+
+}
+
+}

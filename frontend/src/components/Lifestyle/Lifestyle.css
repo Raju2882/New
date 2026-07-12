@@ -1,0 +1,648 @@
+/* ==========================================
+   Lifestyle Section
+========================================== */
+
+.lifestyle{
+    padding:80px 0;
+    background:#F8FAFC;
+    overflow:hidden;
+}
+
+.lifestyle-wrapper{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:60px;
+    align-items:center;
+}
+
+/* ==========================================
+   Images
+========================================== */
+
+.lifestyle-images{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:18px;
+    align-items:stretch;
+}
+
+/* ==========================================
+   Left Image
+========================================== */
+
+.left-image{
+    overflow:hidden;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(22,59,109,.10);
+}
+
+.left-image img{
+    width:100%;
+    height:100%;
+    min-height:620px;
+    object-fit:cover;
+    display:block;
+    transition:.5s ease;
+}
+
+.left-image:hover img{
+    transform:scale(1.06);
+}
+
+/* ==========================================
+   Right Images
+========================================== */
+
+.right-images{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.top-image,
+.bottom-image{
+    overflow:hidden;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(22,59,109,.10);
+    flex:1;
+}
+
+.top-image img,
+.bottom-image img{
+    width:100%;
+    height:100%;
+    min-height:300px;
+    object-fit:cover;
+    display:block;
+    transition:.5s ease;
+}
+
+.top-image:hover img,
+.bottom-image:hover img{
+    transform:scale(1.06);
+}
+
+/* ==========================================
+   Decorative Border
+========================================== */
+
+.left-image,
+.top-image,
+.bottom-image{
+    position:relative;
+}
+
+.left-image::after,
+.top-image::after,
+.bottom-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:14px;
+
+    border:1px solid rgba(216,177,74,.45);
+
+    border-radius:12px;
+
+    pointer-events:none;
+
+}
+
+/* ==========================================
+   Image Hover Shadow
+========================================== */
+
+.left-image,
+.top-image,
+.bottom-image{
+    transition:.35s ease;
+}
+
+.left-image:hover,
+.top-image:hover,
+.bottom-image:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 25px 55px rgba(22,59,109,.18);
+
+}
+/* ==========================================
+   Right Content
+========================================== */
+
+.lifestyle-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+/* ==========================================
+   Section Tag
+========================================== */
+
+.section-tag{
+
+    display:inline-block;
+
+    width:max-content;
+
+    padding:10px 22px;
+
+    background:#FFF8E7;
+
+    color:#D8B14A;
+
+    border:1px solid rgba(216,177,74,.40);
+
+    border-radius:50px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+/* ==========================================
+   Heading
+========================================== */
+
+.lifestyle-content h2{
+
+    margin:0;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:60px;
+
+    line-height:1.05;
+
+    color:#163B6D;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   Gold Line
+========================================== */
+
+.heading-line{
+
+    width:80px;
+
+    height:4px;
+
+    margin:18px 0 28px;
+
+    border-radius:50px;
+
+    background:#D8B14A;
+
+}
+
+/* ==========================================
+   Description
+========================================== */
+
+.lifestyle-content>p{
+
+    max-width:560px;
+
+    color:#666;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================
+   Feature Grid
+========================================== */
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================
+   Feature Card
+========================================== */
+
+.feature-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:18px;
+
+    background:#FFFFFF;
+
+    border:1px solid #ECECEC;
+
+    border-radius:14px;
+
+    box-shadow:0 8px 20px rgba(22,59,109,.06);
+
+    transition:.35s ease;
+
+    cursor:pointer;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#D8B14A;
+
+    box-shadow:0 18px 35px rgba(22,59,109,.14);
+
+}
+
+/* ==========================================
+   Feature Icon
+========================================== */
+
+.feature-icon{
+
+    width:44px;
+
+    height:44px;
+
+    min-width:44px;
+
+    border-radius:50%;
+
+    background:#FFF8E7;
+
+    color:#163B6D;
+
+    border:2px solid #D8B14A;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px;
+
+    transition:.35s;
+
+}
+
+.feature-card:hover .feature-icon{
+
+    background:#163B6D;
+
+    color:#FFFFFF;
+
+    border-color:#163B6D;
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   Feature Text
+========================================== */
+
+.feature-card span{
+
+    font-size:16px;
+
+    color:#163B6D;
+
+    font-weight:600;
+
+    line-height:1.4;
+
+}
+
+/* ==========================================
+   Quote Box
+========================================== */
+
+.quote{
+
+    padding:25px;
+
+    background:#163B6D;
+
+    border-left:5px solid #D8B14A;
+
+    border-radius:14px;
+
+    box-shadow:0 15px 35px rgba(22,59,109,.18);
+
+}
+
+.quote p{
+
+    margin:0;
+
+    color:#FFFFFF;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:28px;
+
+    line-height:1.5;
+
+    font-style:italic;
+
+}
+/* ==========================================
+   Large Laptop
+========================================== */
+
+@media (max-width:1400px){
+
+.lifestyle{
+    padding:70px 0;
+}
+
+.lifestyle-wrapper{
+    gap:45px;
+}
+
+.left-image img{
+    min-height:560px;
+}
+
+.top-image img,
+.bottom-image img{
+    min-height:270px;
+}
+
+.lifestyle-content h2{
+    font-size:54px;
+}
+
+.quote p{
+    font-size:24px;
+}
+
+}
+
+/* ==========================================
+   Tablet
+========================================== */
+
+@media (max-width:992px){
+
+.lifestyle{
+    padding:60px 0;
+}
+
+.lifestyle-wrapper{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+}
+
+/* Images */
+
+.lifestyle-images{
+
+    grid-template-columns:1fr;
+
+    gap:15px;
+
+}
+
+.left-image img{
+
+    min-height:420px;
+
+}
+
+.right-images{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+.top-image img,
+.bottom-image img{
+
+    min-height:220px;
+
+}
+
+/* Content */
+
+.lifestyle-content{
+
+    text-align:center;
+
+}
+
+.section-tag{
+
+    margin:0 auto 18px;
+
+}
+
+.heading-line{
+
+    margin:18px auto 25px;
+
+}
+
+.lifestyle-content > p{
+
+    max-width:100%;
+
+}
+
+/* Cards */
+
+.feature-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px;
+
+}
+
+.quote{
+
+    margin-top:10px;
+
+}
+
+}
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width:576px){
+
+.lifestyle{
+
+    padding:45px 0;
+
+}
+
+.lifestyle-wrapper{
+
+    gap:30px;
+
+}
+
+/* Images */
+
+.lifestyle-images{
+
+    grid-template-columns:1fr;
+
+}
+
+.left-image img{
+
+    min-height:260px;
+
+}
+
+.right-images{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:10px;
+
+}
+
+.top-image img,
+.bottom-image img{
+
+    min-height:130px;
+
+}
+
+/* Content */
+
+.section-tag{
+
+    font-size:10px;
+
+    padding:8px 16px;
+
+    letter-spacing:1px;
+
+}
+
+.lifestyle-content{
+
+    text-align:center;
+
+}
+
+.lifestyle-content h2{
+
+    font-size:34px;
+
+    line-height:1.15;
+
+}
+
+.heading-line{
+
+    width:60px;
+
+    margin:15px auto 20px;
+
+}
+
+.lifestyle-content > p{
+
+    font-size:14px;
+
+    line-height:1.7;
+
+    margin-bottom:22px;
+
+}
+
+/* Cards */
+
+.feature-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:10px;
+
+}
+
+.feature-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:16px 10px;
+
+}
+
+.feature-icon{
+
+    width:40px;
+
+    height:40px;
+
+    min-width:40px;
+
+    padding:8px;
+
+}
+
+.feature-card span{
+
+    font-size:13px;
+
+}
+
+/* Quote */
+
+.quote{
+
+    padding:18px;
+
+}
+
+.quote p{
+
+    font-size:18px;
+
+}
+
+}

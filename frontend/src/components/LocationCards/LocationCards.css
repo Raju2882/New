@@ -1,0 +1,182 @@
+/* ===========================
+   Location Cards
+=========================== */
+
+.location-cards{
+    padding:20px 0 100px;
+    background:#F8FAFC;
+}
+
+.cards-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.location-card{
+    background:#ffffff;
+    border:1px solid #E8EDF3;
+    padding:45px 30px;
+    text-align:center;
+    transition:.35s;
+    cursor:pointer;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 25px rgba(22,59,109,.08);
+}
+
+.location-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(22,59,109,.18);
+    border-color:#D8B14A;
+}
+
+/* ===========================
+   Icon
+=========================== */
+
+.card-icon{
+    width:70px;
+    height:70px;
+    margin:0 auto 22px;
+
+    border-radius:50%;
+
+    background:#FFF8E7;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#163B6D;
+
+    font-size:30px;
+
+    border:2px solid #D8B14A;
+
+    transition:.35s;
+}
+
+.location-card:hover .card-icon{
+
+    background:#163B6D;
+
+    color:#fff;
+
+    border-color:#163B6D;
+
+}
+
+/* ===========================
+   Title
+=========================== */
+
+.location-card h3{
+    margin:0 0 12px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:32px;
+
+    color:#163B6D;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+/* ===========================
+   Subtitle
+=========================== */
+
+.location-card p{
+    margin:0;
+
+    color:#6C757D;
+
+    font-size:17px;
+
+    line-height:1.6;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media(max-width:992px){
+
+.cards-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+}
+
+.location-card{
+    padding:35px 20px;
+}
+
+.location-card h3{
+    font-size:26px;
+}
+
+.location-card p{
+    font-size:15px;
+}
+
+.card-icon{
+    width:60px;
+    height:60px;
+    font-size:26px;
+}
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:576px){
+
+.location-cards{
+    padding:20px 0 60px;
+}
+
+.cards-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.location-card{
+    padding:18px 10px;
+    height:auto;
+}
+
+.card-icon{
+    width:42px;
+    height:42px;
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.location-card h3{
+    font-size:17px;
+    line-height:1.25;
+    margin-bottom:6px;
+}
+
+.location-card p{
+    font-size:12px;
+    line-height:1.4;
+}
+
+}
