@@ -50,7 +50,7 @@ export default function Contact() {
                 <h4>Visit Us</h4>
 
                 <p>
-                 12, M P M Empyloyees Layout, Kengunte,<br/> Annapurneshwari NagarM<br/> Bengaluru, Karnataka 560056
+                 12, M P M Empyloyees Layout, Kengunte,<br/> Annapurneshwari Nagar,<br/> Bengaluru, Karnataka 560056
                 </p>
 
               </div>
@@ -89,7 +89,7 @@ export default function Contact() {
 
                 <p>
 
-                  wednesday - Monday
+                  Wednesday - Monday
                   <br />
 
                   10:00 AM – 6:30 PM

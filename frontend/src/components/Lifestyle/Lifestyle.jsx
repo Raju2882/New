@@ -118,8 +118,7 @@ export default function Lifestyle() {
 
                             <p>
 
-                                "A home is not just a place to live,
-                                it's where your story begins."
+                                Ashraya Aarika - The Art of Plots
 
                             </p>
 

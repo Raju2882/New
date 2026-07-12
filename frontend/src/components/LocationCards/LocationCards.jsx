@@ -13,7 +13,7 @@ const locations = [
   {
     icon: <FaPlaneDeparture />,
     title: "Bangalore Airport",
-    subtitle: "20-minute drive away",
+    subtitle: "25-minute drive away",
   },
   {
     icon: <FaIndustry />,
