@@ -26,7 +26,7 @@ export default function Footer() {
         <h3>Ashraya Estates</h3>
 
         <p>
-          Premium Residential Layouts in Karnataka
+          Premium Residential Layouts in Bangalore
         </p>
 
         <div className="footer-social">

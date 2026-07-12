@@ -89,7 +89,7 @@ export default function Contact() {
 
                 <p>
 
-                  Monday - Saturday
+                  wednesday - Monday
                   <br />
 
                   10:00 AM – 6:30 PM

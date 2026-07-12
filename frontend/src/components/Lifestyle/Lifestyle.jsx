@@ -1,8 +1,8 @@
 import "./Lifestyle.css";
 
-import yoga from "../../assets/images/yoga.jpg";
-import family from "../../assets/images/family.jpg";
-import friends from "../../assets/images/friends.jpg";
+import yoga from "../../assets/images/yoga.jpeg";
+import family from "../../assets/images/family.jpeg";
+import friends from "../../assets/images/friends.jpeg";
 
 import { FaCheckCircle } from "react-icons/fa";
 

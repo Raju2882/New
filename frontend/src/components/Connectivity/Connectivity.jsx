@@ -26,7 +26,7 @@ const cards = [
   {
     icon: <FaRoad />,
     title: "Individual A Khata",
-    desc: "Individual A Khata Every plot comes with an Individual A Khata"  },
+    desc: "Every plot comes with an Individual A Khata"  },
   {
     icon: <FaFileContract />,
     title: "Clear Titles",
@@ -48,9 +48,7 @@ const cards = [
 
           <div className="connectivity-left">
 
-            <span className="section-tag">
-              PREMIUM CONNECTIVITY
-            </span>
+          
 
             <h2>
               Project 

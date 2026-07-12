@@ -1,5 +1,6 @@
 import "./Amenities.css";
-
+import parkTree from "../../assets/images/park-tree.jpeg"; 
+import gateIcon from "../../assets/images/gate.jpeg";
 import {
   FaTree,
   FaHome,
@@ -8,7 +9,8 @@ import {
   FaVideo,
   FaBolt,
   FaTint,
-  FaRoad
+  FaRoad,
+  FaShieldAlt,
 } from "react-icons/fa";
 
 export default function Amenities() {
@@ -19,13 +21,26 @@ export default function Amenities() {
       title: "Landscaped Gardens"
     },
     {
-      icon: <FaHome />,
-      title: "Club House"
-    },
+  icon: (
+    <img
+      src={gateIcon}
+      alt="Gated Community"
+      className="custom-card-icon"
+    />
+  ),
+  title: "Gated Community",
+  desc: "Secure gated community with 24×7 security and controlled access."
+},
     {
-      icon: <FaSwimmingPool />,
-      title: "Swimming Pool"
-    },
+    icon: (
+      <img
+        src={parkTree}
+        alt="Park And Tree"
+        className="custom-card-icon"
+      />
+    ),
+    title: "Park And Tree"
+  },
     {
       icon: <FaChild />,
       title: "Children's Play Area"

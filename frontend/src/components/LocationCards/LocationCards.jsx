@@ -23,7 +23,7 @@ const locations = [
   {
     icon: <FaMicrochip />,
     title: "Foxconn & Tech Parks ",
-    subtitle: "Asia's Largest Apple Manufacturing Ecosyste",
+    subtitle: "Asia's Largest Apple Manufacturing Ecosystem",
   },
   {
     icon: <FaRocket />,
